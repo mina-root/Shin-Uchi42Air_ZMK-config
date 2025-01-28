@@ -1,0 +1,16 @@
+if SHIN_UCHI42_AIR_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Shin-Uchi42 Air"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIN_UCHI42_AIR_LEFT || SHIN_UCHI42_AIR_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

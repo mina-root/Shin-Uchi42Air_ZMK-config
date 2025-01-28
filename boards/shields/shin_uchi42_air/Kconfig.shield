@@ -1,0 +1,5 @@
+config SHIN_UCHI42_AIR_LEFT
+    def_bool $(shields_list_contains,shin_uchi42_air_left)
+
+config SHIN_UCHI42_AIR_RIGHT
+    def_bool $(shields_list_contains,shin_uchi42_air_right)
