@@ -2,7 +2,7 @@ file_format: "1"
 id: shin_uchi42_air
 name: "Shin-Uchi42 Air"
 type: shield
-url: https://github.com/mina-root/zmk-config
+url: https://github.com/mina-root/Shin-Uchi42Air_ZMK-config
 requires: [seeeduino_xiao_ble]
 exposes: [i2c_oled]
 features:
