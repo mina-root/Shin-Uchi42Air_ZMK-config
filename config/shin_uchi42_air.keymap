@@ -35,10 +35,10 @@
 
         default {
             bindings = <
-            &kp Q         &kp L             &kp U             &kp COMMA         &kp DOT     &kp F     &kp W              &kp R             &kp Y         &kp P
-&caps_word  &kp E         &kp I             &mt LEFT_SHIFT A  &mt LEFT_SHIFT O  &kp MINUS   &kp K     &mt RIGHT_SHIFT T  &mt RSHIFT N      &kp S         &kp H       &kp HASH
-&kp UNDER   &kp Z         &kp X             &kp C             &kp V             &kp SEMI    &kp G     &kp D              &kp M             &kp J         &kp B       &kp FSLH
-&tog 4      &out OUT_TOG  &mt LEFT_ALT ESC  &lt 1 LANG2       &mt LCTRL SPACE   &kp DELETE  &kp BSPC  &mt RCTRL ENTER    &lt 3 LANGUAGE_1  &kp LEFT_WIN  &bt BT_PRV  &bt BT_NXT
+           &kp Q         &kp L             &kp U             &kp COMMA         &kp DOT     &kp F     &kp W              &kp R             &kp Y         &kp P
+&kp AT     &kp E         &kp I             &mt LEFT_SHIFT A  &mt LEFT_SHIFT O  &kp MINUS   &kp K     &mt RIGHT_SHIFT T  &mt RSHIFT N      &kp S         &kp H  &kp HASH
+&kp UNDER  &kp Z         &kp X             &kp C             &kp V             &kp SEMI    &kp G     &kp D              &kp M             &kp J         &kp B  &kp FSLH
+&tog 4     &out OUT_TOG  &mt LEFT_ALT ESC  &lt 1 LANG2       &mt LCTRL SPACE   &kp DELETE  &kp BSPC  &mt RCTRL ENTER    &lt 3 LANGUAGE_1  &kp LEFT_WIN  &mo 5  &tog 4
             >;
         };
 
@@ -54,7 +54,7 @@
         non-numpad {
             bindings = <
         &trans  &trans  &trans  &trans  &trans  &trans     &kp N7  &kp N8  &kp N9   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp EQUAL  &kp N4  &kp N5  &kp N6   &kp MINUS  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp EQUAL  &kp N4  &kp N5  &kp N6   &kp ASTRK  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp PLUS   &kp N1  &kp N2  &kp N3   &kp SLASH  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp N0  &kp DOT  &trans     &trans
             >;
@@ -78,12 +78,12 @@
             >;
         };
 
-        unused {
+        bluetooth {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans
             >;
         };
     };
