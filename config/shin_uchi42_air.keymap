@@ -14,11 +14,6 @@
     combos {
         compatible = "zmk,combos";
 
-        bluetooth_clear {
-            bindings = <&bt BT_CLR>;
-            key-positions = <45 44>;
-        };
-
         tab {
             bindings = <&kp TAB>;
             key-positions = <14 15>;
@@ -27,6 +22,11 @@
         shift+tab {
             bindings = <&kp LS(TAB)>;
             key-positions = <26 27>;
+        };
+
+        Bootloader {
+            bindings = <&bootloader>;
+            key-positions = <44 45>;
         };
     };
 
@@ -38,7 +38,7 @@
            &kp Q         &kp L             &kp U             &kp COMMA         &kp DOT     &kp F     &kp W              &kp R             &kp Y         &kp P
 &kp AT     &kp E         &kp I             &mt LEFT_SHIFT A  &mt LEFT_SHIFT O  &kp MINUS   &kp K     &mt RIGHT_SHIFT T  &mt RSHIFT N      &kp S         &kp H  &kp HASH
 &kp UNDER  &kp Z         &kp X             &kp C             &kp V             &kp SEMI    &kp G     &kp D              &kp M             &kp J         &kp B  &kp FSLH
-&tog 4     &out OUT_TOG  &mt LEFT_ALT ESC  &lt 1 LANG2       &mt LCTRL SPACE   &kp DELETE  &kp BSPC  &mt RCTRL ENTER    &lt 3 LANGUAGE_1  &kp LEFT_WIN  &mo 5  &tog 4
+&tog 4     &out OUT_TOG  &mt LEFT_ALT ESC  &lt 1 LANG2       &mt LCTRL SPACE   &kp DELETE  &kp BSPC  &mt RCTRL ENTER    &lt 3 LANGUAGE_1  &kp LEFT_WIN  &mo 5  &sys_reset
             >;
         };
 
@@ -81,7 +81,7 @@
         bluetooth {
             bindings = <
         &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans
             >;
@@ -92,7 +92,7 @@
         compatible = "zmk,conditional-layers";
 
         keypad_mode {
-            if-layers = <1 5>;
+            if-layers = <1 4>;
             then-layer = <2>;
         };
     };
