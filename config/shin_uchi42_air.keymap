@@ -36,7 +36,7 @@
         default {
             bindings = <
            &kp Q         &kp L             &kp U             &kp COMMA         &kp DOT     &kp F     &kp W              &kp R             &kp Y         &kp P
-&kp AT     &kp E         &kp I             &mt LEFT_SHIFT A  &mt LEFT_SHIFT O  &kp MINUS   &kp K     &mt RIGHT_SHIFT T  &mt RSHIFT N      &kp S         &kp H  &kp HASH
+&kp HASH   &kp E         &kp I             &mt LEFT_SHIFT A  &mt LEFT_SHIFT O  &kp MINUS   &kp K     &mt RIGHT_SHIFT T  &mt RSHIFT N      &kp S         &kp H  &kp COLON
 &kp UNDER  &kp Z         &kp X             &kp C             &kp V             &kp SEMI    &kp G     &kp D              &kp M             &kp J         &kp B  &kp FSLH
 &tog 4     &out OUT_TOG  &mt LEFT_ALT ESC  &lt 1 LANG2       &mt LCTRL SPACE   &kp DELETE  &kp BSPC  &mt RCTRL ENTER    &lt 3 LANGUAGE_1  &kp LEFT_WIN  &mo 5  &sys_reset
             >;
@@ -44,10 +44,10 @@
 
         symbol-numpad {
             bindings = <
-           &kp DOLLAR  &kp LBKT  &kp LESS_THAN      &kp RBKT  &kp GREATER_THAN  &kp PERCENT   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp AMPERSAND
-&kp GRAVE  &kp CARET   &kp LPAR  &kp SINGLE_QUOTE   &kp RPAR  &kp EXCL          &kp KP_EQUAL  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ASTERISK  &kp PIPE
-&kp COLON  &kp TILDE   &kp LBRC  &kp DOUBLE_QUOTES  &kp RBRC  &kp QMARK         &kp KP_PLUS   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DIVIDE    &kp BACKSLASH
-&trans     &trans      &trans    &trans             &trans    &trans            &trans        &trans           &kp KP_NUMBER_0  &kp KP_DOT       &trans           &trans
+             &kp DOLLAR     &kp LBKT  &kp LESS_THAN      &kp RBKT  &kp GREATER_THAN  &kp PERCENT   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp TILDE
+&kp GRAVE    &kp AMPERSAND  &kp LPAR  &kp SINGLE_QUOTE   &kp RPAR  &kp EXCL          &kp KP_EQUAL  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ASTERISK  &kp CARET
+&kp AT_SIGN  &kp PIPE       &kp LBRC  &kp DOUBLE_QUOTES  &kp RBRC  &kp QMARK         &kp KP_PLUS   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DIVIDE    &kp BACKSLASH
+&trans       &trans         &trans    &trans             &trans    &trans            &trans        &trans           &kp KP_NUMBER_0  &kp KP_DOT       &trans           &trans
             >;
         };
 
@@ -62,10 +62,10 @@
 
         others {
             bindings = <
-        &kp F2  &kp F3  &kp F4   &kp F5   &kp F6   &kp PRINTSCREEN  &kp HOME  &kp UP            &kp PG_UP      &kp C_VOL_DN
-&kp F1  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp C_PREV       &kp LEFT  &kp DOWN          &kp RIGHT      &kp C_MUTE            &kp C_VOL_UP
-&kp F7  &none   &none   &none    &none    &none    &kp C_NEXT       &kp END   &kp C_PLAY_PAUSE  &kp PAGE_DOWN  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
-&trans  &trans  &trans  &trans   &trans   &trans   &trans           &trans    &trans            &trans         &trans                &trans
+        &kp F2  &kp F3  &kp F4   &kp F5   &kp F6   &kp PRINTSCREEN  &kp HOME  &kp UP            &kp PG_UP      &kp C_VOLUME_UP
+&kp F1  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp C_PREV       &kp LEFT  &kp DOWN          &kp RIGHT      &kp C_VOL_DN     &kp C_BRI_UP
+&kp F7  &none   &none   &none    &none    &none    &kp C_NEXT       &kp END   &kp C_PLAY_PAUSE  &kp PAGE_DOWN  &kp K_MUTE       &kp C_BRI_DN
+&trans  &trans  &trans  &trans   &trans   &trans   &trans           &trans    &trans            &trans         &trans           &trans
             >;
         };
 
