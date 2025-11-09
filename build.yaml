@@ -27,8 +27,3 @@ include:
   # --- 通常ファームウェア（右） ---
   - board: seeeduino_xiao_ble
     shield: shin_uchi42_air_right
-
-  # --- settings reset ---
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
-    cmake-args: -DZMK_SETTINGS_RESET=y
