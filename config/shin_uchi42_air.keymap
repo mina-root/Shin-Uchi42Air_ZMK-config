@@ -27,6 +27,11 @@
             bindings = <&bootloader>;
             key-positions = <44 45>;
         };
+
+        NumLock {
+            bindings = <&kp KP_NUMLOCK>;
+            key-positions = <34 35>;
+        };
     };
 
     keymap {
